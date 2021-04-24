@@ -90,7 +90,7 @@ body {
 
 .how-it-works {
   display: block;
-  max-width: 50%;
+  /*max-width: 50%;*/
   margin: auto;
 }
 
@@ -115,4 +115,12 @@ body {
 .wrapper {
   /*position: relative;*/
   padding-top: 100px;
+  max-width: 50%;
+  margin: auto;
+}
+
+@media screen and (max-width: 992px) {
+  .wrapper{
+    max-width: 100%;
+  }
 }
