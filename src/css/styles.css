@@ -9,26 +9,24 @@ body {
   background-color: antiquewhite;
 }
 
-.body-container {
-  max-width: 80%;
-  display: block;
-}
-
 .form-container {
   max-width: 30%;
   margin: auto;
+  margin-bottom: 20px;
   display: block;
 }
 
 .video-container {
   max-width: 100%;
   margin: auto;
+  margin-bottom: 50px;
+  margin-top: 50px;
   display: block;
 }
 
 .input-container {
   width: 100%;
-  margin: 1% 1%;
+  margin-top: 20px;
   text-align: center;
   display: block;
 }
@@ -36,9 +34,28 @@ body {
 .input-type {
   font-family: "Roboto", sans-serif;
   width: 256px;
+  height: 32px;
 }
 
 .submit-button {
+  width: 100%;
+  height: 30px;
+  margin-top: 20px;
+  text-align: center;
+  display: block;
+  background-color: #ff8a5f;
+  border: #ff8a5f;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.button {
+  width: 60%;
+  height: 30px;
+  margin: auto;
+  margin-top: 30px;
+  text-align: center;
+  display: block;
   background-color: #ff8a5f;
   border: #ff8a5f;
   cursor: pointer;
@@ -46,18 +63,30 @@ body {
 }
 
 .nav-link {
-  text-align: center;
+  display: inline-block;
+  text-align: justify;
   margin-left: 64px;
   margin-right: 64px;
   margin-top: 0;
   margin-bottom: 0;
+  text-decoration: none;
 }
 
-.header-container {
-  max-width: 100%;
-  margin: auto;
-  background-color: #cab3b7;
-  /*display: flex;*/
+header {
+  display: inline;
+  padding: 14px 16px;
+}
+
+#header-img {
+  display: block;
+  margin-left: 32px;
+  height: 32px;
+  
+}
+
+pre{
+  font-weight: 900;
+  font-size: larger;
 }
 
 .product-container {
@@ -81,17 +110,51 @@ body {
   height: 32px;
 }
 
-.navbar {
+#features ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+#features li{
+  margin-top: 20px;
+}
+
+nav {
+  background-color: #cab3b7;
+  height: 64px;
   position: fixed;
   top: 0;
-  display: block;
+  display: flex;
   width: 100%;
+  align-items: center;
+}
+
+header ul {
+  list-style-type: none;
+  float: right;
+  margin-left: auto;
+  padding: 0;
+  overflow: hidden;
+  background-color: #cab3b7;
+}
+
+header li {
+  float: left;
+}
+
+header li a {
+  display: flex;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
 .how-it-works {
   display: block;
   /*max-width: 50%;*/
-  margin: auto;
+  margin-top: 100px;
+  /*margin: auto;*/
 }
 
 .hiw-title {
@@ -119,8 +182,24 @@ body {
   margin: auto;
 }
 
+.aux {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2{
+  text-align: center;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+p{
+  text-align: center;
+  margin: 0px 20px;
+}
+
 @media screen and (max-width: 992px) {
-  .wrapper{
+  .wrapper {
     max-width: 100%;
   }
 }
